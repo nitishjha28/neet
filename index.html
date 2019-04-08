@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Fabio Muller">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Module 3 Coding Assignment</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+  body {
+  font-size: 16px;
+  color: #008;
+  background-color: #DCDCDC;
+  font-family: 'Courgette', cursive;
+}
+
+/*****HEADER*****/
+#nav-list a{
+  color: #000;
+}
+#nav-list a:hover{
+  background-color: #778899;
+}
+/*Restaurant Name*/
+#header-nav {
+  background-color: #696969;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: serif, 'Arial';
+  color: #DCDCDC;
+  font-size: 2em;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #000;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list a{
+	text-align: center;
+}
+/*****END HEADER*****/
+/*****SECTION*****/
+.page_title{
+	margin-bottom: 40px;
+}
+.description{
+	background-color: #778899;
+	margin-bottom: 40px;
+  border: 1px solid #000;
+}
+.description h3{
+  background-color: #696969;
+  border: 1px solid #000;
+}
+.back_to_top{
+	text-align: right;
+}
+.back_to_top a{
+  color: #191970;
+}
+.back_to_top a:hover, .back_to_top a:focus {
+  text-decoration: none;
+  color: #000080;
+  /*text-shadow: 1px 1px 1px #191970;*/
+}
+
+@media (max-width: 767px){
+	.row{
+		padding: 0 10% 0 10%;
+	}
+}
+/*****END SECTION*****/
+  </style>
+	<style>
+  
+  /* latin-ext */
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Courgette Regular'), local('Courgette-Regular'), url(https://fonts.gstatic.com/s/courgette/v6/wEO_EBrAnc9BLjLQAUk1WPoK7Es.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Courgette Regular'), local('Courgette-Regular'), url(https://fonts.gstatic.com/s/courgette/v6/wEO_EBrAnc9BLjLQAUk1VvoK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  </style>
+</head>
+<body>
+	<header>
+	    <nav id="header-nav" class="navbar navbar-default">
+	      <div class="container">
+	        <div class="navbar-header">
+
+	          <div class="navbar-brand">
+	            <a href="index.html"><h1>Food, LLC</h1></a>
+	          </div>
+
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	        </div>
+
+	        <div id="collapsable-nav" class="collapse navbar-collapse">
+	           <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+	            <li>
+	              <a href="#chicken_index">Chiken</a>
+	            </li>
+	            <li>
+	              <a href="#beef_index">Beef</a>
+	            </li>
+	            <li>
+	              <a href="#sushi_index">Sushi</a>
+	            </li>
+	          </ul><!-- #nav-list -->
+	        </div><!-- .collapse .navbar-collapse -->	        
+	      </div><!-- .container -->
+    </nav>
+	</header>
+	<section class="container">
+		<div class="row">
+			<h1 class="page_title col-xs-12 text-center">Our Menu</h1>
+			<div id="chicken_index" class="description col-xs-12">
+				<h3 class="text-center">Chicken</h3>
+				<p>Pellentesque pulvinar mi eu pellentesque sodales. Etiam a finibus eros. Etiam laoreet enim metus, in sagittis augue porta fringilla. Donec tempor, nulla quis elementum consectetur, felis ligula porta odio, ac imperdiet justo arcu in ex. Sed a libero in urna convallis dapibus non ut enim. Nam mollis libero id mauris interdum, non suscipit lacus tincidunt. Phasellus elementum nec ipsum non consectetur. Suspendisse potenti. Integer sem magna, rhoncus eu auctor vitae, ultrices eget nulla. Nulla hendrerit viverra massa, sed vulputate ligula feugiat non. Sed lacinia eros eu mi rutrum varius. Etiam quis tellus bibendum, dignissim erat eu, laoreet nunc. Duis vehicula sem eget facilisis tempor. Mauris ut mauris urna. Mauris nibh magna, consequat vel fermentum quis, volutpat in ligula. In consectetur, odio at semper malesuada, dolor nulla consectetur enim, at egestas erat mi vitae erat. Sed id magna lobortis, pharetra ex sit amet, viverra nisl. Nulla eu finibus quam, in sollicitudin turpis. Suspendisse potenti. Aenean vel gravida dui, non finibus augue. Nam volutpat auctor orci, id vestibulum purus ultricies in. Etiam eget lorem ullamcorper, venenatis metus et, varius arcu. Mauris rhoncus pharetra venenatis. Ut ac neque leo. Aliquam a interdum magna, vitae iaculis arcu. Quisque in lobortis nibh. Sed vestibulum nisl ut velit aliquam tempus. Morbi magna massa, faucibus in egestas blandit, mattis quis est. Quisque et facilisis turpis, sit amet imperdiet metus. Sed consectetur purus lectus, vel porta ipsum euismod a. Suspendisse eget nunc vel libero hendrerit ullamcorper laoreet id urna. Integer sit amet dui id quam dapibus imperdiet eu id lorem. Phasellus convallis pellentesque quam non feugiat. Integer fermentum orci laoreet, sollicitudin nulla id, commodo enim. Vivamus mattis elit vitae pellentesque aliquam. Nullam efficitur lorem vitae imperdiet pretium. Phasellus scelerisque leo a eros imperdiet molestie. Morbi diam enim, sollicitudin dignissim ultricies quis, auctor a ex. Cras eget tortor dapibus, volutpat justo et, blandit purus. Ut non turpis at orci ornare tempor vitae vitae eros. Curabitur est lorem, ultricies in turpis non, pretium volutpat ipsum. Phasellus consectetur lorem vitae faucibus interdum. Vivamus quis sapien sit amet nulla placerat pellentesque eget in sem. Sed gravida a risus at vulputate. In egestas vel sem sed eleifend. Vivamus quis quam at ligula aliquam interdum. Aliquam ac lectus eu libero consequat convallis. Vestibulum sit amet tempor neque. Integer purus enim, malesuada quis condimentum at, vehicula quis mauris. Sed a arcu risus. In pharetra tortor sit amet ipsum eleifend efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum ligula nulla, ut convallis quam semper id. Ut et porttitor sapien. Maecenas eu egestas orci, quis vehicula sem. Maecenas ante nisi, pellentesque in nulla eget, blandit dapibus orci. Sed ac tristique dui, ut iaculis lorem. Proin varius dolor vel nisi sagittis placerat. Integer lacinia sapien nec molestie sagittis. Fusce porttitor dolor a lorem sollicitudin pulvinar. Pellentesque tristique magna cursus massa scelerisque efficitur. Proin feugiat viverra eros, eget lacinia enim tempor quis. Etiam ultrices magna enim, vel dapibus odio euismod vel. Etiam ultrices sem rutrum mauris aliquam tristique eget eget eros. Etiam egestas ut purus ut aliquam. Fusce vestibulum blandit mauris, et consectetur nisi malesuada id. Nam congue, augue sit amet rutrum pharetra, mauris arcu venenatis diam, at sodales ipsum enim sit amet metus.</p>
+				<div class="back_to_top"><a href="#">Back To Top</a></div>
+			</div>
+
+			<div id="beef_index" class="description col-xs-12">
+				<h3 class="text-center">Beef</h3>
+				<p>Pellentesque pulvinar mi eu pellentesque sodales. Etiam a finibus eros. Etiam laoreet enim metus, in sagittis augue porta fringilla. Donec tempor, nulla quis elementum consectetur, felis ligula porta odio, ac imperdiet justo arcu in ex. Sed a libero in urna convallis dapibus non ut enim. Nam mollis libero id mauris interdum, non suscipit lacus tincidunt. Phasellus elementum nec ipsum non consectetur. Suspendisse potenti. Integer sem magna, rhoncus eu auctor vitae, ultrices eget nulla. Nulla hendrerit viverra massa, sed vulputate ligula feugiat non. Sed lacinia eros eu mi rutrum varius. Etiam quis tellus bibendum, dignissim erat eu, laoreet nunc. Duis vehicula sem eget facilisis tempor. Mauris ut mauris urna. Mauris nibh magna, consequat vel fermentum quis, volutpat in ligula. In consectetur, odio at semper malesuada, dolor nulla consectetur enim, at egestas erat mi vitae erat. Sed id magna lobortis, pharetra ex sit amet, viverra nisl. Nulla eu finibus quam, in sollicitudin turpis. Suspendisse potenti. Aenean vel gravida dui, non finibus augue. Nam volutpat auctor orci, id vestibulum purus ultricies in. Etiam eget lorem ullamcorper, venenatis metus et, varius arcu. Mauris rhoncus pharetra venenatis. Ut ac neque leo. Aliquam a interdum magna, vitae iaculis arcu. Quisque in lobortis nibh. Sed vestibulum nisl ut velit aliquam tempus. Morbi magna massa, faucibus in egestas blandit, mattis quis est. Quisque et facilisis turpis, sit amet imperdiet metus. Sed consectetur purus lectus, vel porta ipsum euismod a. Suspendisse eget nunc vel libero hendrerit ullamcorper laoreet id urna. Integer sit amet dui id quam dapibus imperdiet eu id lorem. Phasellus convallis pellentesque quam non feugiat. Integer fermentum orci laoreet, sollicitudin nulla id, commodo enim. Vivamus mattis elit vitae pellentesque aliquam. Nullam efficitur lorem vitae imperdiet pretium. Phasellus scelerisque leo a eros imperdiet molestie. Morbi diam enim, sollicitudin dignissim ultricies quis, auctor a ex. Cras eget tortor dapibus, volutpat justo et, blandit purus. Ut non turpis at orci ornare tempor vitae vitae eros. Curabitur est lorem, ultricies in turpis non, pretium volutpat ipsum. Phasellus consectetur lorem vitae faucibus interdum. Vivamus quis sapien sit amet nulla placerat pellentesque eget in sem. Sed gravida a risus at vulputate. In egestas vel sem sed eleifend. Vivamus quis quam at ligula aliquam interdum. Aliquam ac lectus eu libero consequat convallis. Vestibulum sit amet tempor neque. Integer purus enim, malesuada quis condimentum at, vehicula quis mauris. Sed a arcu risus. In pharetra tortor sit amet ipsum eleifend efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum ligula nulla, ut convallis quam semper id. Ut et porttitor sapien. Maecenas eu egestas orci, quis vehicula sem. Maecenas ante nisi, pellentesque in nulla eget, blandit dapibus orci. Sed ac tristique dui, ut iaculis lorem. Proin varius dolor vel nisi sagittis placerat. Integer lacinia sapien nec molestie sagittis. Fusce porttitor dolor a lorem sollicitudin pulvinar. Pellentesque tristique magna cursus massa scelerisque efficitur. Proin feugiat viverra eros, eget lacinia enim tempor quis. Etiam ultrices magna enim, vel dapibus odio euismod vel. Etiam ultrices sem rutrum mauris aliquam tristique eget eget eros. Etiam egestas ut purus ut aliquam. Fusce vestibulum blandit mauris, et consectetur nisi malesuada id. Nam congue, augue sit amet rutrum pharetra, mauris arcu venenatis diam, at sodales ipsum enim sit amet metus.</p>
+				<div class="back_to_top"><a href="#">Back To Top</a></div>
+			</div>
+
+			<div id="sushi_index" class="description col-xs-12">
+				<h3 class="text-center">Sushi</h3>
+				<p>Pellentesque pulvinar mi eu pellentesque sodales. Etiam a finibus eros. Etiam laoreet enim metus, in sagittis augue porta fringilla. Donec tempor, nulla quis elementum consectetur, felis ligula porta odio, ac imperdiet justo arcu in ex. Sed a libero in urna convallis dapibus non ut enim. Nam mollis libero id mauris interdum, non suscipit lacus tincidunt. Phasellus elementum nec ipsum non consectetur. Suspendisse potenti. Integer sem magna, rhoncus eu auctor vitae, ultrices eget nulla. Nulla hendrerit viverra massa, sed vulputate ligula feugiat non. Sed lacinia eros eu mi rutrum varius. Etiam quis tellus bibendum, dignissim erat eu, laoreet nunc. Duis vehicula sem eget facilisis tempor. Mauris ut mauris urna. Mauris nibh magna, consequat vel fermentum quis, volutpat in ligula. In consectetur, odio at semper malesuada, dolor nulla consectetur enim, at egestas erat mi vitae erat. Sed id magna lobortis, pharetra ex sit amet, viverra nisl. Nulla eu finibus quam, in sollicitudin turpis. Suspendisse potenti. Aenean vel gravida dui, non finibus augue. Nam volutpat auctor orci, id vestibulum purus ultricies in. Etiam eget lorem ullamcorper, venenatis metus et, varius arcu. Mauris rhoncus pharetra venenatis. Ut ac neque leo. Aliquam a interdum magna, vitae iaculis arcu. Quisque in lobortis nibh. Sed vestibulum nisl ut velit aliquam tempus. Morbi magna massa, faucibus in egestas blandit, mattis quis est. Quisque et facilisis turpis, sit amet imperdiet metus. Sed consectetur purus lectus, vel porta ipsum euismod a. Suspendisse eget nunc vel libero hendrerit ullamcorper laoreet id urna. Integer sit amet dui id quam dapibus imperdiet eu id lorem. Phasellus convallis pellentesque quam non feugiat. Integer fermentum orci laoreet, sollicitudin nulla id, commodo enim. Vivamus mattis elit vitae pellentesque aliquam. Nullam efficitur lorem vitae imperdiet pretium. Phasellus scelerisque leo a eros imperdiet molestie. Morbi diam enim, sollicitudin dignissim ultricies quis, auctor a ex. Cras eget tortor dapibus, volutpat justo et, blandit purus. Ut non turpis at orci ornare tempor vitae vitae eros. Curabitur est lorem, ultricies in turpis non, pretium volutpat ipsum. Phasellus consectetur lorem vitae faucibus interdum. Vivamus quis sapien sit amet nulla placerat pellentesque eget in sem. Sed gravida a risus at vulputate. In egestas vel sem sed eleifend. Vivamus quis quam at ligula aliquam interdum. Aliquam ac lectus eu libero consequat convallis. Vestibulum sit amet tempor neque. Integer purus enim, malesuada quis condimentum at, vehicula quis mauris. Sed a arcu risus. In pharetra tortor sit amet ipsum eleifend efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum ligula nulla, ut convallis quam semper id. Ut et porttitor sapien. Maecenas eu egestas orci, quis vehicula sem. Maecenas ante nisi, pellentesque in nulla eget, blandit dapibus orci. Sed ac tristique dui, ut iaculis lorem. Proin varius dolor vel nisi sagittis placerat. Integer lacinia sapien nec molestie sagittis. Fusce porttitor dolor a lorem sollicitudin pulvinar. Pellentesque tristique magna cursus massa scelerisque efficitur. Proin feugiat viverra eros, eget lacinia enim tempor quis. Etiam ultrices magna enim, vel dapibus odio euismod vel. Etiam ultrices sem rutrum mauris aliquam tristique eget eget eros. Etiam egestas ut purus ut aliquam. Fusce vestibulum blandit mauris, et consectetur nisi malesuada id. Nam congue, augue sit amet rutrum pharetra, mauris arcu venenatis diam, at sodales ipsum enim sit amet metus.</p>
+				<div class="back_to_top"><a href="#">Back To Top</a></div>
+			</div>
+		</div>	
+	</section>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
